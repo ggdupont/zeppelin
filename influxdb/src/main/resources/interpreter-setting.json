@@ -1,32 +1,32 @@
 [
   {
-    "group": "elasticsearch",
-    "name": "elasticsearch",
-    "className": "org.apache.zeppelin.elasticsearch.ElasticsearchInterpreter",
+    "group": "influxdb",
+    "name": "influxdb",
+    "className": "org.apache.zeppelin.influxdb.InfluxdbInterpreter",
     "properties": {
-      "elasticsearch.host": {
-        "envName": "ELASTICSEARCH_HOST",
-        "propertyName": "elasticsearch.host",
+      "influxdb.host": {
+        "envName": "INFLUXDB_HOST",
+        "propertyName": "influxdb.host",
         "defaultValue": "localhost",
-        "description": "The host for Elasticsearch"
+        "description": "The host for Influxdb"
       },
-      "elasticsearch.port": {
-        "envName": "ELASTICSEARCH_PORT",
-        "propertyName": "elasticsearch.port",
+      "influxdb.port": {
+        "envName": "INFLUXDB_PORT",
+        "propertyName": "influxdb.port",
         "defaultValue": "9300",
-        "description": "The port for Elasticsearch"
+        "description": "The port for Influxdb"
       },
-      "elasticsearch.cluster.name": {
-        "envName": "ELASTICSEARCH_CLUSTER_NAME",
-        "propertyName": "elasticsearch.cluster.name",
-        "defaultValue": "elasticsearch",
-        "description": "The cluster name for Elasticsearch"
+      "influxdb.cluster.name": {
+        "envName": "INFLUXDB_USERNAME",
+        "propertyName": "influxdb.username",
+        "defaultValue": "root",
+        "description": "The userser name for Influxdb"
       },
-      "elasticsearch.result.size": {
-        "envName": "ELASTICSEARCH_RESULT_SIZE",
-        "propertyName": "elasticsearch.result.size",
-        "defaultValue": "10",
-        "description": "The size of the result set of a search query"
+      "influxdb.result.size": {
+        "envName": "INFLUXDB_PASSWORD",
+        "propertyName": "influxdb.password",
+        "defaultValue": "root",
+        "description": "The password name for Influxdb"
       }
     }
   }
